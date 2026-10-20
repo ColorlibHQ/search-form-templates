@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colrolib Templates">
+    <meta name="author" content="Colrolib">
+    <meta name="keywords" content="Colrolib Templates">
+
+    <!-- Title Page-->
+    <title>Au Form Wizard</title>
+
+    	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="page-wrapper bg-img-2 p-t-290 p-b-120">
+        <div class="wrapper wrapper--w1226">
+            <div class="cl-card card-5">
+                <div class="cl-card-body">
+                    <form method="POST" action="#">
+                        <div class="cl-row row-space">
+                            <div class="cl-col-2">
+                                <div class="cl-input-group">
+                                    <label class="label">from</label>
+                                    <input class="input--style-1" type="text" name="from" placeholder="City, Region or Airport" required="required">
+                                </div>
+                            </div>
+                            <div class="cl-col-2">
+                                <div class="cl-input-group">
+                                    <label class="label">to</label>
+                                    <input class="input--style-1" type="text" name="to" placeholder="City, Region or Airport" required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cl-row row-space">
+                            <div class="cl-col-2">
+                                <div class="cl-row row-space">
+                                    <div class="cl-col-2">
+                                        <div class="cl-input-group m-b-0">
+                                            <label class="label">Passengers</label>
+                                            <div class="input-group-icon" id="js-select-special">
+                                                <input class="input--style-1 input--text-small" type="text" name="passengers" value="1 Adult, 0 Children, 1 Room" readonly id="info">
+                                                <i class="zmdi zmdi-plus input-icon"><svg class="cl-icon" viewBox="0 0 299 512" style="vertical-align:-0.125em" aria-hidden="true" focusable="false"><g transform="translate(0,449) scale(1,-1)"><path d="M299 171H171V43H128V171H0V213H128V341H171V213H299Z"/></g></svg></i>
+                                            </div>
+                                            <div class="dropdown-select">
+                                                <ul class="list-room">
+                                                    <li class="list-room__item">
+                                                        <span class="list-room__name">Room 1</span>
+                                                        <ul class="list-person">
+                                                            <li class="list-person__item">
+                                                                <span class="name">Adults</span>
+                                                                <div class="quantity quantity1">
+                                                                    <span class="minus">-</span>
+                                                                    <input class="inputQty" type="number" min="0" value="1">
+                                                                    <span class="plus">+</span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-person__item">
+                                                                <span class="name">Children</span>
+                                                                <div class="quantity quantity2">
+                                                                    <span class="minus">-</span>
+                                                                    <input class="inputQty" type="number" min="0" value="0">
+                                                                    <span class="plus">+</span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <div class="list-room__footer">
+                                                    <a href="#" id="btn-add-room">Add room</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cl-col-2">
+                                        <div class="cl-input-group m-b-0">
+                                            <label class="label">Depart</label>
+                                            <input type="date" class="input--style-1" name="depart" id="input-start">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cl-col-2">
+                                <div class="cl-row row-space">
+                                    <div class="cl-col-2">
+                                        <div class="cl-input-group m-b-0">
+                                            <label class="label">Return</label>
+                                            <input type="date" class="input--style-1" name="return" id="input-end">
+                                        </div>
+                                    </div>
+                                    <div class="cl-col-2">
+                                        <button class="btn-submit" type="submit">search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script src="js/snippet.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
